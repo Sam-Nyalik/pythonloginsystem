@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block title %}Profile Page{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="profile_info">
+                <h2>Profile Page</h2>
+                <hr>
+                <p>Account details for {{ account['username'] }}:</p>
+
+                <table class="table table-responsive table-bordered">
+                   <tr>
+                    <th>Email Address</th>
+                    <th>Password</th>
+                   </tr>
+                   <tr>
+                    <td>{{ account['email']}}</td>
+                    <td>{{ account['password']}}</td>
+                   </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
